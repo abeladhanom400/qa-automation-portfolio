@@ -48,3 +48,20 @@
 - **Severity:** low - customers can still buy, the user experience might be affected but not too much since they could still remove the items from the shopping cart page.
 - **Priority:** low - might ruin the customer experience a little, but not enough for it to affect sales.
 - **Evidence:** (screenshots added later)
+
+## BUG-04: 404 error code when pressing the about button in the menu - only with problem_user
+
+-  **Environment:** Google Chrome, saucedemo.com, logged in as `problem_user`
+- **Steps to reproduce:**
+  1. open google chrome
+  2. open up saucedemo.com on google chrome
+  3. type in problem_user in the username box
+  4. type in secret_sauce in the password box
+  5. press the login button and get directed to the home page
+  6. open the menu to the left
+  7. press the about button 
+- **Expected result:** it should open sauce labs homepage
+- **Actual result:** saucelabs.com/error/404 page could not be found - this does not occur with standard_user only problem_user.
+- **Severity:** low - no function is broken; the About link leads to an external info page that shows 404, while logging in, browsing and buying all still work.
+- **Priority:** medium - the broken link sits in the main menu and is visible to every logged-in user, so it reflects badly on the product even though the impact is small.
+- **Evidence:** (screenshots added later)
