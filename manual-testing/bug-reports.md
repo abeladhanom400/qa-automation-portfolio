@@ -65,3 +65,24 @@
 - **Severity:** low - no function is broken; the About link leads to an external info page that shows 404, while logging in, browsing and buying all still work.
 - **Priority:** medium - the broken link sits in the main menu and is visible to every logged-in user, so it reflects badly on the product even though the impact is small.
 - **Evidence:** (screenshots added later)
+
+## BUG-05: when checking out, you can't fill in your last name - this gives an error message that the last name is required
+-  **Environment:** Google Chrome, saucedemo.com, logged in as `problem_user`
+- **Steps to reproduce:**
+  1. open google chrome
+  2. open up saucedemo.com on google chrome
+  3. type in problem_user in the username box
+  4. type in secret_sauce in the password box
+  5. press the login button and get directed to the home page
+  6. add the items sauce labs backpack and sauce labs bike light to your cart
+  7. press the shopping cart icon on the top right
+  8. after seeing your items in the cart press the checkout button
+  9. fill in your first name
+  10. click in the last name box and try to type a last name
+  11. fill in your zip-code
+  12. press continue
+- **Expected result:** should check-out your cart and go to the checkout overview page
+- **Actual result:** last name can't be filled in, when trying the text ends up into the first name box and the last name box stays empty and when pressing continue you get an error message saying error: last name is required.
+- **Severity:** high - if a customer can't buy anything the company won't be able to make sales.
+- **Priority:** high - needs to be fixed as soon as possible so that saucedemo can keep up with sales.
+- **Evidence:** (screenshots added later)
